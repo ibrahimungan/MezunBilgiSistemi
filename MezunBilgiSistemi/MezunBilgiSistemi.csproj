@@ -60,37 +60,46 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\OgrenciKayitForm.cs">
+    <Compile Include="Forms\frmGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\OgrenciKayitForm.Designer.cs">
-      <DependentUpon>OgrenciKayitForm.cs</DependentUpon>
+    <Compile Include="Forms\frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\OgrenciListele.cs">
+    <Compile Include="Forms\frmKayit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\OgrenciListele.Designer.cs">
-      <DependentUpon>OgrenciListele.cs</DependentUpon>
+    <Compile Include="Forms\frmKayit.Designer.cs">
+      <DependentUpon>frmKayit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\StajEkle.cs">
+    <Compile Include="Forms\frmOgrenciList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\StajEkle.Designer.cs">
-      <DependentUpon>StajEkle.cs</DependentUpon>
+    <Compile Include="Forms\frmOgrenciList.Designer.cs">
+      <DependentUpon>frmOgrenciList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStajEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStajEkle.Designer.cs">
+      <DependentUpon>frmStajEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Bolum.cs" />
     <Compile Include="Models\Mezun.cs" />
     <Compile Include="Models\Staj.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\OgrenciKayitForm.resx">
-      <DependentUpon>OgrenciKayitForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\OgrenciListele.resx">
-      <DependentUpon>OgrenciListele.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmKayit.resx">
+      <DependentUpon>frmKayit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\StajEkle.resx">
-      <DependentUpon>StajEkle.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmOgrenciList.resx">
+      <DependentUpon>frmOgrenciList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStajEkle.resx">
+      <DependentUpon>frmStajEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,8 +126,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ADT\HashTable\" />
-    <Folder Include="Forms\" />
-    <Folder Include="BusinessLayer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,7 +16,7 @@ namespace MezunBilgiSistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmKayit());
+            Application.Run(new frmGiris());
         }
     }
 }

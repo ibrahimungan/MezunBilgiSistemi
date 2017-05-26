@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace MezunBilgiSistemi.Forms
 {
-    public partial class frmOgrenciList : Form
+    public partial class frmOgrenciGuncelle : Form
     {
-        public frmOgrenciList()
+        public frmOgrenciGuncelle()
         {
             InitializeComponent();
         }
 
-        private void btnOgrList_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmOgrenciList_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmOgrenciList_FormClosed(object sender, FormClosedEventArgs e)
+        private void frmOgrenciGuncelle_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.OpenForms[Application.OpenForms.Count - 1].Show();
         }

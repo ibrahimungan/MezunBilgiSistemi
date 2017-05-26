@@ -57,7 +57,7 @@
             this.chbBasari = new System.Windows.Forms.CheckBox();
             this.txtBolumAd = new System.Windows.Forms.TextBox();
             this.txtNotOrt = new System.Windows.Forms.TextBox();
-            this.btnOgrEkle = new System.Windows.Forms.Button();
+            this.btnKaydet = new System.Windows.Forms.Button();
             this.btnOgrGuncelle = new System.Windows.Forms.Button();
             this.dateBaslangic = new System.Windows.Forms.DateTimePicker();
             this.dateBitis = new System.Windows.Forms.DateTimePicker();
@@ -321,14 +321,14 @@
             this.txtNotOrt.Size = new System.Drawing.Size(200, 22);
             this.txtNotOrt.TabIndex = 38;
             // 
-            // btnOgrEkle
+            // btnKaydet
             // 
-            this.btnOgrEkle.Location = new System.Drawing.Point(861, 451);
-            this.btnOgrEkle.Name = "btnOgrEkle";
-            this.btnOgrEkle.Size = new System.Drawing.Size(92, 44);
-            this.btnOgrEkle.TabIndex = 39;
-            this.btnOgrEkle.Text = "Öğrenci Ekle";
-            this.btnOgrEkle.UseVisualStyleBackColor = true;
+            this.btnKaydet.Location = new System.Drawing.Point(861, 451);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(92, 44);
+            this.btnKaydet.TabIndex = 39;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.UseVisualStyleBackColor = true;
             // 
             // btnOgrGuncelle
             // 
@@ -338,6 +338,7 @@
             this.btnOgrGuncelle.TabIndex = 40;
             this.btnOgrGuncelle.Text = "Öğrenci Güncelle";
             this.btnOgrGuncelle.UseVisualStyleBackColor = true;
+            this.btnOgrGuncelle.Click += new System.EventHandler(this.btnOgrGuncelle_Click);
             // 
             // dateBaslangic
             // 
@@ -386,7 +387,7 @@
             this.Controls.Add(this.dateBitis);
             this.Controls.Add(this.dateBaslangic);
             this.Controls.Add(this.btnOgrGuncelle);
-            this.Controls.Add(this.btnOgrEkle);
+            this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.txtNotOrt);
             this.Controls.Add(this.txtBolumAd);
             this.Controls.Add(this.chbBasari);
@@ -418,6 +419,7 @@
             this.Controls.Add(this.lbOgrBilgi);
             this.Name = "frmKayit";
             this.Text = "Öğrenci Bilgileri";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmKayit_FormClosed);
             this.Load += new System.EventHandler(this.frmKayit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridStaj)).EndInit();
             this.ResumeLayout(false);
@@ -456,7 +458,7 @@
         private System.Windows.Forms.CheckBox chbBasari;
         private System.Windows.Forms.TextBox txtBolumAd;
         private System.Windows.Forms.TextBox txtNotOrt;
-        private System.Windows.Forms.Button btnOgrEkle;
+        private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.Button btnOgrGuncelle;
         private System.Windows.Forms.DateTimePicker dateBaslangic;
         private System.Windows.Forms.DateTimePicker dateBitis;

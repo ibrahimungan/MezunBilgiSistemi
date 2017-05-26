@@ -119,6 +119,8 @@
             this.Controls.Add(this.dataGridOgrList);
             this.Name = "frmOgrenciList";
             this.Text = "Öğrenci Listele";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmOgrenciList_FormClosed);
+            this.Load += new System.EventHandler(this.frmOgrenciList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridOgrList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
