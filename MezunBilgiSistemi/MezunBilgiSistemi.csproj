@@ -117,11 +117,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ADT\HashTable\" />
-<<<<<<< HEAD
     <Folder Include="Forms\" />
-=======
     <Folder Include="BusinessLayer\" />
->>>>>>> 50cba0fafc4ca90e24c85e38cae0c4f453518bd2
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
