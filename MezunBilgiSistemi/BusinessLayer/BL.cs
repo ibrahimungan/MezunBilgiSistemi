@@ -11,7 +11,7 @@ namespace MezunBilgiSistemi.BusinessLayer
 {
     public static class BL
     {
-        public static string PATH = @"mezunListesi.txt";
+        public static string PATH = @"../../mezunListesi.txt";
         public static void SerializeAndWrite(List<Mezun> mezunListesi)
         {
             string json = JsonConvert.SerializeObject(mezunListesi);
@@ -59,9 +59,17 @@ namespace MezunBilgiSistemi.BusinessLayer
 
             List<Mezun> mlist = new List<Mezun>();
             mlist.Add(m);
+
+            m.Ad = "Muhammet";
+            m.OgrenciNo = 13280237;
+            m.BolumBilgileri.Last.Value.NotOrtalamasi = 75;
             mlist.Add(m);
+
+            m.Ad = "Halil";
+            m.OgrenciNo = 13280226;
+            m.BolumBilgileri.Last.Value.NotOrtalamasi = 80;
             mlist.Add(m);
-            mlist.Add(m);
+
             SerializeAndWrite(mlist);
         }
     }

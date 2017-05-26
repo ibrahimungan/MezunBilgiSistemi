@@ -15,6 +15,8 @@ namespace MezunBilgiSistemi.Forms
         public frmKayit()
         {
             InitializeComponent();
+            BusinessLayer.BL.createFakeJSON();
+            var a = BusinessLayer.BL.DeserializeFromFile(@"../../mezunListesi.txt");
         }
 
         public static DataTable staj = new DataTable();
