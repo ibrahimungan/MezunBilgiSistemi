@@ -106,6 +106,7 @@
             this.btnOgrList.TabIndex = 4;
             this.btnOgrList.Text = "Öğrenci Listesi";
             this.btnOgrList.UseVisualStyleBackColor = true;
+            this.btnOgrList.Click += new System.EventHandler(this.btnOgrList_Click);
             // 
             // frmOgrenciList
             // 

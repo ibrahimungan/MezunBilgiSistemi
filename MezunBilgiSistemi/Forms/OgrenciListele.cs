@@ -16,5 +16,10 @@ namespace MezunBilgiSistemi.Forms
         {
             InitializeComponent();
         }
+
+        private void btnOgrList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

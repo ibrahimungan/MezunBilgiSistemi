@@ -17,7 +17,7 @@ namespace MezunBilgiSistemi.Forms
             InitializeComponent();
         }
 
-    private void StajEkle_FormClosed(object sender, FormClosedEventArgs e)
+        private void StajEkle_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.OpenForms[Application.OpenForms.Count - 1].Show();
         }
@@ -29,9 +29,20 @@ namespace MezunBilgiSistemi.Forms
 
         private void btnStajEkle_Click(object sender, EventArgs e)
         {
-
+            if (frmKayit.staj.Columns.Count == 0)
+            {
+                frmKayit.staj.Columns.Add("Şirket Adı", typeof(string));
+                frmKayit.staj.Columns.Add("Staj Tarihi", typeof(DateTime));
+                frmKayit.staj.Columns.Add("Staj Departmanı", typeof(string));
+            }
+            DataRow row = frmKayit.staj.NewRow();
+            row[0] = txtSirketAd.Text;
+            row[1] = dateStajTarih.Value.Date;
+            row[2] = txtStajDep.Text;
+            frmKayit.staj.Rows.Add(row);
+            Close();
         }
     }
 
-   
+
 }

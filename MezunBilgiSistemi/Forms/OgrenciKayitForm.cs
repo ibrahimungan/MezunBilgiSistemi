@@ -17,11 +17,11 @@ namespace MezunBilgiSistemi.Forms
             InitializeComponent();
         }
 
-       
+        public static DataTable staj = new DataTable();
 
         private void frmKayit_Load(object sender, EventArgs e)
         {
-
+            dataGridStaj.DataSource = staj;
         }
 
         private void button1_Click_1(object sender, EventArgs e)

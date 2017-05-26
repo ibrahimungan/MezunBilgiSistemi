@@ -62,9 +62,6 @@
             this.dateBaslangic = new System.Windows.Forms.DateTimePicker();
             this.dateBitis = new System.Windows.Forms.DateTimePicker();
             this.dataGridStaj = new System.Windows.Forms.DataGridView();
-            this.sirketAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stajTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stajDepartman = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnStajEkle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridStaj)).BeginInit();
             this.SuspendLayout();
@@ -362,34 +359,12 @@
             this.dataGridStaj.AllowUserToDeleteRows = false;
             this.dataGridStaj.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridStaj.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridStaj.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sirketAd,
-            this.stajTarih,
-            this.stajDepartman});
             this.dataGridStaj.Location = new System.Drawing.Point(30, 474);
             this.dataGridStaj.Name = "dataGridStaj";
             this.dataGridStaj.ReadOnly = true;
             this.dataGridStaj.RowTemplate.Height = 24;
             this.dataGridStaj.Size = new System.Drawing.Size(458, 119);
             this.dataGridStaj.TabIndex = 43;
-            // 
-            // sirketAd
-            // 
-            this.sirketAd.HeaderText = "Şirket Adı";
-            this.sirketAd.Name = "sirketAd";
-            this.sirketAd.ReadOnly = true;
-            // 
-            // stajTarih
-            // 
-            this.stajTarih.HeaderText = "Staj Tarihi";
-            this.stajTarih.Name = "stajTarih";
-            this.stajTarih.ReadOnly = true;
-            // 
-            // stajDepartman
-            // 
-            this.stajDepartman.HeaderText = "Staj Departmanı";
-            this.stajDepartman.Name = "stajDepartman";
-            this.stajDepartman.ReadOnly = true;
             // 
             // btnStajEkle
             // 
@@ -486,9 +461,6 @@
         private System.Windows.Forms.DateTimePicker dateBaslangic;
         private System.Windows.Forms.DateTimePicker dateBitis;
         private System.Windows.Forms.DataGridView dataGridStaj;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sirketAd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stajTarih;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stajDepartman;
         private System.Windows.Forms.Button btnStajEkle;
     }
 }
