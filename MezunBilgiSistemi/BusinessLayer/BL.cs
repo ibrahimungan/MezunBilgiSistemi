@@ -6,11 +6,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MezunBilgiSistemi.ADT;
+
 
 namespace MezunBilgiSistemi.BusinessLayer
 {
     public static class BL
     {
+        #region  JSON İŞLEMLERİ
         public static string PATH = @"../../mezunListesi.txt";
         public static void SerializeAndWrite(List<Mezun> mezunListesi)
         {
@@ -72,5 +75,6 @@ namespace MezunBilgiSistemi.BusinessLayer
 
             SerializeAndWrite(mlist);
         }
+        #endregion
     }
 }

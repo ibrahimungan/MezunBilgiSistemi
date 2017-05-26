@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="ADT\BinaryTree\BinaryTreeADT.cs" />
     <Compile Include="ADT\BinaryTree\BinaryTreeNode.cs" />
+    <Compile Include="ADT\HashTable\HashTableADT.cs" />
     <Compile Include="ADT\Heap\HeapADT.cs" />
     <Compile Include="ADT\Heap\HeapNode.cs" />
     <Compile Include="BusinessLayer\BL.cs" />
@@ -66,15 +67,11 @@
     <Compile Include="Forms\OgrenciKayitForm.Designer.cs">
       <DependentUpon>OgrenciKayitForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\OgrenciListele.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Forms\OgrenciListele.cs" />
     <Compile Include="Forms\OgrenciListele.Designer.cs">
       <DependentUpon>OgrenciListele.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\StajEkle.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Forms\StajEkle.cs" />
     <Compile Include="Forms\StajEkle.Designer.cs">
       <DependentUpon>StajEkle.cs</DependentUpon>
     </Compile>
@@ -115,9 +112,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ADT\HashTable\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="mezunListesi.txt" />
   </ItemGroup>
