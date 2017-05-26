@@ -6,13 +6,36 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MezunBilgiSistemi.ADT;
+using MezunBilgiSistemi.ADT.HashTable;
+using MezunBilgiSistemi.ADT.BinaryTree;
+using MezunBilgiSistemi.ADT.Heap;
+
 
 
 namespace MezunBilgiSistemi.BusinessLayer
 {
     public static class BL
     {
+        public static HashTableADT hashtable = new HashTableADT();
+        public static HeapADT heapYZM = new HeapADT(100);
+        public static HeapADT heapMAKINE = new HeapADT(100);
+
+        public static void hashtableDoldur()
+        {
+            hashtable.BolumEkle("Yazılım", heapYZM);
+            hashtable.BolumEkle("Makine", heapMAKINE);
+        }
+
+        public static BinarTreeAdt binaryMezunlar = new BinarTreeAdt();
+
+        public static void MezunlariHeapeveAgacaEkle(List<Mezun> mezunListesi)
+        {
+            foreach (var mezun in mezunListesi)
+            {
+                heapYZM.Insert(mezun);
+                binaryMezunlar.Insert(mezun);
+            }
+        }
         #region  JSON İŞLEMLERİ
         public static string PATH = @"../../mezunListesi.txt";
         public static void SerializeAndWrite(List<Mezun> mezunListesi)
@@ -76,5 +99,12 @@ namespace MezunBilgiSistemi.BusinessLayer
             SerializeAndWrite(mlist);
         }
         #endregion
+
+        public static void olustur()
+        {
+            List<Mezun> okunanMezunlar = DeserializeFromFile(PATH);
+            MezunlariHeapeveAgacaEkle(okunanMezunlar);
+            hashtableDoldur();
+        }
     }
 }
