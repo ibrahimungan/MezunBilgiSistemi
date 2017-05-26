@@ -60,11 +60,38 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OgrenciKayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OgrenciKayitForm.Designer.cs">
+      <DependentUpon>OgrenciKayitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OgrenciListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OgrenciListele.Designer.cs">
+      <DependentUpon>OgrenciListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StajEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StajEkle.Designer.cs">
+      <DependentUpon>StajEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Bolum.cs" />
     <Compile Include="Models\Mezun.cs" />
     <Compile Include="Models\Staj.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\OgrenciKayitForm.resx">
+      <DependentUpon>OgrenciKayitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OgrenciListele.resx">
+      <DependentUpon>OgrenciListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StajEkle.resx">
+      <DependentUpon>StajEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -90,7 +117,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ADT\HashTable\" />
+<<<<<<< HEAD
     <Folder Include="Forms\" />
+=======
+    <Folder Include="BusinessLayer\" />
+>>>>>>> 50cba0fafc4ca90e24c85e38cae0c4f453518bd2
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
