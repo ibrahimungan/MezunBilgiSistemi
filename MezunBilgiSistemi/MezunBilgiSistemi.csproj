@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="ADT\BinaryTree\BinaryTreeADT.cs" />
     <Compile Include="ADT\BinaryTree\BinaryTreeNode.cs" />
+    <Compile Include="ADT\HashTable\HashTableADT.cs" />
     <Compile Include="ADT\Heap\HeapADT.cs" />
     <Compile Include="ADT\Heap\HeapNode.cs" />
     <Compile Include="BusinessLayer\BL.cs" />
@@ -124,8 +125,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Folder Include="ADT\HashTable\" />
+    <Content Include="mezunListesi.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

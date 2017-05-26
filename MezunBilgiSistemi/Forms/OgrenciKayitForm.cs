@@ -15,8 +15,6 @@ namespace MezunBilgiSistemi.Forms
         public frmKayit()
         {
             InitializeComponent();
-            BusinessLayer.BL.createFakeJSON();
-            var a = BusinessLayer.BL.DeserializeFromFile(@"../../mezunListesi.txt");
         }
 
         public static DataTable staj = new DataTable();
@@ -31,18 +29,6 @@ namespace MezunBilgiSistemi.Forms
             frmStajEkle se = new frmStajEkle();
             se.Show();
             this.Hide();
-        }
-
-        private void frmKayit_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.OpenForms[Application.OpenForms.Count - 1].Show();
-        }
-
-        private void btnOgrGuncelle_Click(object sender, EventArgs e)
-        {
-            frmOgrenciGuncelle og = new frmOgrenciGuncelle();
-            og.Show();
-            Hide();
         }
     }
 }
