@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MezunBilgiSistemi.Models;
 
 namespace MezunBilgiSistemi.Forms
 {
@@ -35,6 +36,12 @@ namespace MezunBilgiSistemi.Forms
                 frmKayit.staj.Columns.Add("Staj Tarihi", typeof(DateTime));
                 frmKayit.staj.Columns.Add("Staj Departmanı", typeof(string));
             }
+            Staj s = new Staj();
+            s.SirketAdi = txtSirketAd.Text;
+            s.StajDepartmani = txtStajDep.Text;
+            s.StajTarihi = dateStajTarih.Value.Date;
+            frmKayit.st.AddLast(s);
+
             DataRow row = frmKayit.staj.NewRow();
             row[0] = txtSirketAd.Text;
             row[1] = dateStajTarih.Value.Date;

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MezunBilgiSistemi.Models;
+using MezunBilgiSistemi.BusinessLayer;
 
 namespace MezunBilgiSistemi.Forms
 {
@@ -21,6 +22,7 @@ namespace MezunBilgiSistemi.Forms
         }
 
         public static DataTable staj = new DataTable();
+        public static LinkedList<Staj> st = new LinkedList<Staj>();
 
         private void frmKayit_Load(object sender, EventArgs e)
         {
@@ -51,19 +53,40 @@ namespace MezunBilgiSistemi.Forms
             Mezun m = new Mezun();
             m.Ad = txtAd.Text;
             m.Adres = txtAdres.Text;
+            m.BolumBilgileri = new LinkedList<Bolum>();
+            m.BolumBilgileri.AddLast(new Bolum());
             m.BolumBilgileri.Last.Value.BaslangicYili = Convert.ToInt32(txtBaslangicYili.Text);
             m.BolumBilgileri.Last.Value.BitisYili = Convert.ToInt32(txtBitisYili.Text);
-            m.BolumBilgileri.Last.Value.BolumAdi= txtBolumAd.Text;
+            m.BolumBilgileri.Last.Value.BolumAdi= cmbBolum.Text;
             m.BolumBilgileri.Last.Value.NotOrtalamasi = Convert.ToInt32(txtNotOrt.Text);
             m.BolumBilgileri.Last.Value.BasariBelgesiAlmisMi = chbBasari.Checked;
             m.DogumTarihi = dateDogumTarihi.Value.Date;
             m.ePosta = txtEposta.Text;
-            //m.IlgiAlanları = 
             m.OgrenciNo = Convert.ToInt64(txtOgrNo.Text);
-            //m.StajBilgileri.Last.Value.SirketAdi 
+            m.StajBilgileri = st;
             m.Telefon = txtTel.Text;
             m.Uyruk = txtUyruk.Text;
-            //m.YabanciDil = cboxDil.Text;
+            m.YabanciDil = (YabanciDilDuzeyi)cboxDil.SelectedIndex;
+
+            BL.binaryMezunlar.Insert(m);
+            if (cmbBolum.Text == "Yazılım Mühendisliği")
+            {
+                ADT.Heap.HeapADT h =  BL.hashtable.BolumHeapiniGetir("Yazılım");
+                h.Insert(m);
+            }
+            else
+            {
+                ADT.Heap.HeapADT h = BL.hashtable.BolumHeapiniGetir("Makine");
+                h.Insert(m);
+            }
+            MessageBox.Show("Mezun Bilgisi Eklendi.");
+
+
+
+
+
+
+            st = new LinkedList<Staj>();
         }
     }
 }

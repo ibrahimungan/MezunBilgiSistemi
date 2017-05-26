@@ -28,138 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridOgrList = new System.Windows.Forms.DataGridView();
-            this.ogrenciNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrenciBolum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrenciAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrenciOrt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lbBolum = new System.Windows.Forms.Label();
-            this.txtBolum = new System.Windows.Forms.TextBox();
-            this.btnOgrList = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridOgrList)).BeginInit();
+            this.btn90Ustu = new System.Windows.Forms.Button();
+            this.btnAdvanced = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnGeriDon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // dataGridOgrList
+            // btn90Ustu
             // 
-            this.dataGridOgrList.AllowUserToAddRows = false;
-            this.dataGridOgrList.AllowUserToDeleteRows = false;
-            this.dataGridOgrList.AllowUserToOrderColumns = true;
-            this.dataGridOgrList.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dataGridOgrList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridOgrList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ogrenciNo,
-            this.ogrenciBolum,
-            this.ogrenciAdi,
-            this.ogrenciOrt});
-            this.dataGridOgrList.Location = new System.Drawing.Point(21, 34);
-            this.dataGridOgrList.Name = "dataGridOgrList";
-            this.dataGridOgrList.ReadOnly = true;
-            this.dataGridOgrList.RowTemplate.Height = 24;
-            this.dataGridOgrList.Size = new System.Drawing.Size(551, 406);
-            this.dataGridOgrList.TabIndex = 0;
+            this.btn90Ustu.Location = new System.Drawing.Point(647, 12);
+            this.btn90Ustu.Name = "btn90Ustu";
+            this.btn90Ustu.Size = new System.Drawing.Size(173, 46);
+            this.btn90Ustu.TabIndex = 5;
+            this.btn90Ustu.Text = "Ortalaması 90 Üstü";
+            this.btn90Ustu.UseVisualStyleBackColor = true;
+            this.btn90Ustu.Click += new System.EventHandler(this.btn90Ustu_Click);
             // 
-            // ogrenciNo
+            // btnAdvanced
             // 
-            this.ogrenciNo.HeaderText = "Öğrenci No";
-            this.ogrenciNo.Name = "ogrenciNo";
-            this.ogrenciNo.ReadOnly = true;
+            this.btnAdvanced.Location = new System.Drawing.Point(647, 64);
+            this.btnAdvanced.Name = "btnAdvanced";
+            this.btnAdvanced.Size = new System.Drawing.Size(173, 46);
+            this.btnAdvanced.TabIndex = 6;
+            this.btnAdvanced.Text = "İngilizcesi Advanced";
+            this.btnAdvanced.UseVisualStyleBackColor = true;
+            this.btnAdvanced.Click += new System.EventHandler(this.btnAdvanced_Click);
             // 
-            // ogrenciBolum
+            // textBox1
             // 
-            this.ogrenciBolum.HeaderText = "Bölümü";
-            this.ogrenciBolum.Name = "ogrenciBolum";
-            this.ogrenciBolum.ReadOnly = true;
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(629, 305);
+            this.textBox1.TabIndex = 7;
             // 
-            // ogrenciAdi
+            // btnGeriDon
             // 
-            this.ogrenciAdi.HeaderText = "Öğrenci Adı";
-            this.ogrenciAdi.Name = "ogrenciAdi";
-            this.ogrenciAdi.ReadOnly = true;
-            // 
-            // ogrenciOrt
-            // 
-            this.ogrenciOrt.HeaderText = "Not Ortalaması";
-            this.ogrenciOrt.Name = "ogrenciOrt";
-            this.ogrenciOrt.ReadOnly = true;
-            // 
-            // lbBolum
-            // 
-            this.lbBolum.AutoSize = true;
-            this.lbBolum.Location = new System.Drawing.Point(647, 56);
-            this.lbBolum.Name = "lbBolum";
-            this.lbBolum.Size = new System.Drawing.Size(47, 17);
-            this.lbBolum.TabIndex = 2;
-            this.lbBolum.Text = "Bölüm";
-            // 
-            // txtBolum
-            // 
-            this.txtBolum.Location = new System.Drawing.Point(742, 53);
-            this.txtBolum.Name = "txtBolum";
-            this.txtBolum.Size = new System.Drawing.Size(173, 22);
-            this.txtBolum.TabIndex = 3;
-            // 
-            // btnOgrList
-            // 
-            this.btnOgrList.Location = new System.Drawing.Point(742, 81);
-            this.btnOgrList.Name = "btnOgrList";
-            this.btnOgrList.Size = new System.Drawing.Size(173, 46);
-            this.btnOgrList.TabIndex = 4;
-            this.btnOgrList.Text = "Öğrenci Listesi";
-            this.btnOgrList.UseVisualStyleBackColor = true;
-            this.btnOgrList.Click += new System.EventHandler(this.btnOgrList_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(742, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 46);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Ortalaması 90 Üstü";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(742, 185);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 46);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "İngilizcesi Advanced";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnGeriDon.Location = new System.Drawing.Point(647, 271);
+            this.btnGeriDon.Name = "btnGeriDon";
+            this.btnGeriDon.Size = new System.Drawing.Size(173, 46);
+            this.btnGeriDon.TabIndex = 8;
+            this.btnGeriDon.Text = "Geri Dön";
+            this.btnGeriDon.UseVisualStyleBackColor = true;
+            this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
             // 
             // frmOgrenciList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 617);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnOgrList);
-            this.Controls.Add(this.txtBolum);
-            this.Controls.Add(this.lbBolum);
-            this.Controls.Add(this.dataGridOgrList);
+            this.ClientSize = new System.Drawing.Size(839, 329);
+            this.Controls.Add(this.btnGeriDon);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnAdvanced);
+            this.Controls.Add(this.btn90Ustu);
             this.Name = "frmOgrenciList";
             this.Text = "Öğrenci Listele";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmOgrenciList_FormClosed);
             this.Load += new System.EventHandler(this.frmOgrenciList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridOgrList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridOgrList;
-        private System.Windows.Forms.Label lbBolum;
-        private System.Windows.Forms.TextBox txtBolum;
-        private System.Windows.Forms.Button btnOgrList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrenciNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrenciBolum;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrenciAdi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrenciOrt;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn90Ustu;
+        private System.Windows.Forms.Button btnAdvanced;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnGeriDon;
     }
 }

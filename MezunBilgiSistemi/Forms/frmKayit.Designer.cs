@@ -55,14 +55,15 @@
             this.lbNotOrt = new System.Windows.Forms.Label();
             this.lbBasariBelgesi = new System.Windows.Forms.Label();
             this.chbBasari = new System.Windows.Forms.CheckBox();
-            this.txtBolumAd = new System.Windows.Forms.TextBox();
             this.txtNotOrt = new System.Windows.Forms.TextBox();
             this.btnKaydet = new System.Windows.Forms.Button();
-            this.btnOgrGuncelle = new System.Windows.Forms.Button();
             this.dataGridStaj = new System.Windows.Forms.DataGridView();
             this.btnStajEkle = new System.Windows.Forms.Button();
             this.txtBaslangicYili = new System.Windows.Forms.TextBox();
             this.txtBitisYili = new System.Windows.Forms.TextBox();
+            this.cmbBolum = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridStaj)).BeginInit();
             this.SuspendLayout();
             // 
@@ -212,16 +213,16 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label13.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label13.Location = new System.Drawing.Point(864, 30);
+            this.label13.Location = new System.Drawing.Point(858, 451);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(197, 20);
+            this.label13.Size = new System.Drawing.Size(213, 20);
             this.label13.TabIndex = 24;
-            this.label13.Text = "- - - Öğrenci Okul - - -";
+            this.label13.Text = "- - - Öğrenci Arama - - -";
             // 
             // lbOgrNo
             // 
             this.lbOgrNo.AutoSize = true;
-            this.lbOgrNo.Location = new System.Drawing.Point(701, 85);
+            this.lbOgrNo.Location = new System.Drawing.Point(702, 59);
             this.lbOgrNo.Name = "lbOgrNo";
             this.lbOgrNo.Size = new System.Drawing.Size(80, 17);
             this.lbOgrNo.TabIndex = 25;
@@ -229,14 +230,14 @@
             // 
             // txtOgrNo
             // 
-            this.txtOgrNo.Location = new System.Drawing.Point(861, 80);
+            this.txtOgrNo.Location = new System.Drawing.Point(862, 54);
             this.txtOgrNo.Name = "txtOgrNo";
             this.txtOgrNo.Size = new System.Drawing.Size(228, 22);
             this.txtOgrNo.TabIndex = 26;
             // 
             // btnOgrAra
             // 
-            this.btnOgrAra.Location = new System.Drawing.Point(861, 119);
+            this.btnOgrAra.Location = new System.Drawing.Point(855, 540);
             this.btnOgrAra.Name = "btnOgrAra";
             this.btnOgrAra.Size = new System.Drawing.Size(106, 36);
             this.btnOgrAra.TabIndex = 27;
@@ -245,7 +246,7 @@
             // 
             // btnOgrKaldir
             // 
-            this.btnOgrKaldir.Location = new System.Drawing.Point(973, 119);
+            this.btnOgrKaldir.Location = new System.Drawing.Point(967, 540);
             this.btnOgrKaldir.Name = "btnOgrKaldir";
             this.btnOgrKaldir.Size = new System.Drawing.Size(116, 36);
             this.btnOgrKaldir.TabIndex = 28;
@@ -255,7 +256,7 @@
             // lbBolAd
             // 
             this.lbBolAd.AutoSize = true;
-            this.lbBolAd.Location = new System.Drawing.Point(701, 245);
+            this.lbBolAd.Location = new System.Drawing.Point(702, 85);
             this.lbBolAd.Name = "lbBolAd";
             this.lbBolAd.Size = new System.Drawing.Size(71, 17);
             this.lbBolAd.TabIndex = 29;
@@ -264,7 +265,7 @@
             // lbBaslangic
             // 
             this.lbBaslangic.AutoSize = true;
-            this.lbBaslangic.Location = new System.Drawing.Point(701, 285);
+            this.lbBaslangic.Location = new System.Drawing.Point(702, 125);
             this.lbBaslangic.Name = "lbBaslangic";
             this.lbBaslangic.Size = new System.Drawing.Size(91, 17);
             this.lbBaslangic.TabIndex = 30;
@@ -273,7 +274,7 @@
             // lbBitis
             // 
             this.lbBitis.AutoSize = true;
-            this.lbBitis.Location = new System.Drawing.Point(701, 323);
+            this.lbBitis.Location = new System.Drawing.Point(702, 163);
             this.lbBitis.Name = "lbBitis";
             this.lbBitis.Size = new System.Drawing.Size(56, 17);
             this.lbBitis.TabIndex = 31;
@@ -282,7 +283,7 @@
             // lbNotOrt
             // 
             this.lbNotOrt.AutoSize = true;
-            this.lbNotOrt.Location = new System.Drawing.Point(701, 361);
+            this.lbNotOrt.Location = new System.Drawing.Point(702, 201);
             this.lbNotOrt.Name = "lbNotOrt";
             this.lbNotOrt.Size = new System.Drawing.Size(102, 17);
             this.lbNotOrt.TabIndex = 32;
@@ -291,7 +292,7 @@
             // lbBasariBelgesi
             // 
             this.lbBasariBelgesi.AutoSize = true;
-            this.lbBasariBelgesi.Location = new System.Drawing.Point(701, 397);
+            this.lbBasariBelgesi.Location = new System.Drawing.Point(702, 237);
             this.lbBasariBelgesi.Name = "lbBasariBelgesi";
             this.lbBasariBelgesi.Size = new System.Drawing.Size(98, 17);
             this.lbBasariBelgesi.TabIndex = 33;
@@ -300,46 +301,29 @@
             // chbBasari
             // 
             this.chbBasari.AutoSize = true;
-            this.chbBasari.Location = new System.Drawing.Point(861, 397);
+            this.chbBasari.Location = new System.Drawing.Point(862, 237);
             this.chbBasari.Name = "chbBasari";
             this.chbBasari.Size = new System.Drawing.Size(52, 21);
             this.chbBasari.TabIndex = 34;
             this.chbBasari.Text = "Var";
             this.chbBasari.UseVisualStyleBackColor = true;
             // 
-            // txtBolumAd
-            // 
-            this.txtBolumAd.Location = new System.Drawing.Point(861, 240);
-            this.txtBolumAd.Name = "txtBolumAd";
-            this.txtBolumAd.Size = new System.Drawing.Size(200, 22);
-            this.txtBolumAd.TabIndex = 35;
-            // 
             // txtNotOrt
             // 
-            this.txtNotOrt.Location = new System.Drawing.Point(861, 356);
+            this.txtNotOrt.Location = new System.Drawing.Point(862, 196);
             this.txtNotOrt.Name = "txtNotOrt";
             this.txtNotOrt.Size = new System.Drawing.Size(200, 22);
             this.txtNotOrt.TabIndex = 38;
             // 
             // btnKaydet
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(861, 451);
+            this.btnKaydet.Location = new System.Drawing.Point(862, 291);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(92, 44);
             this.btnKaydet.TabIndex = 39;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
-            // 
-            // btnOgrGuncelle
-            // 
-            this.btnOgrGuncelle.Location = new System.Drawing.Point(973, 451);
-            this.btnOgrGuncelle.Name = "btnOgrGuncelle";
-            this.btnOgrGuncelle.Size = new System.Drawing.Size(92, 44);
-            this.btnOgrGuncelle.TabIndex = 40;
-            this.btnOgrGuncelle.Text = "Öğrenci Güncelle";
-            this.btnOgrGuncelle.UseVisualStyleBackColor = true;
-            this.btnOgrGuncelle.Click += new System.EventHandler(this.btnOgrGuncelle_Click);
             // 
             // dataGridStaj
             // 
@@ -366,31 +350,59 @@
             // 
             // txtBaslangicYili
             // 
-            this.txtBaslangicYili.Location = new System.Drawing.Point(861, 280);
+            this.txtBaslangicYili.Location = new System.Drawing.Point(862, 120);
             this.txtBaslangicYili.Name = "txtBaslangicYili";
             this.txtBaslangicYili.Size = new System.Drawing.Size(200, 22);
             this.txtBaslangicYili.TabIndex = 45;
             // 
             // txtBitisYili
             // 
-            this.txtBitisYili.Location = new System.Drawing.Point(861, 320);
+            this.txtBitisYili.Location = new System.Drawing.Point(862, 160);
             this.txtBitisYili.Name = "txtBitisYili";
             this.txtBitisYili.Size = new System.Drawing.Size(200, 22);
             this.txtBitisYili.TabIndex = 46;
+            // 
+            // cmbBolum
+            // 
+            this.cmbBolum.FormattingEnabled = true;
+            this.cmbBolum.Items.AddRange(new object[] {
+            "Yazılım Mühendisliği",
+            "Makine Mühendisliği"});
+            this.cmbBolum.Location = new System.Drawing.Point(862, 82);
+            this.cmbBolum.Name = "cmbBolum";
+            this.cmbBolum.Size = new System.Drawing.Size(200, 24);
+            this.cmbBolum.TabIndex = 47;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(862, 491);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(228, 22);
+            this.textBox1.TabIndex = 49;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(702, 496);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 17);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "Öğrenci No";
             // 
             // frmKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1288, 665);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbBolum);
             this.Controls.Add(this.txtBitisYili);
             this.Controls.Add(this.txtBaslangicYili);
             this.Controls.Add(this.btnStajEkle);
             this.Controls.Add(this.dataGridStaj);
-            this.Controls.Add(this.btnOgrGuncelle);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.txtNotOrt);
-            this.Controls.Add(this.txtBolumAd);
             this.Controls.Add(this.chbBasari);
             this.Controls.Add(this.lbBasariBelgesi);
             this.Controls.Add(this.lbNotOrt);
@@ -457,13 +469,14 @@
         private System.Windows.Forms.Label lbNotOrt;
         private System.Windows.Forms.Label lbBasariBelgesi;
         private System.Windows.Forms.CheckBox chbBasari;
-        private System.Windows.Forms.TextBox txtBolumAd;
         private System.Windows.Forms.TextBox txtNotOrt;
         private System.Windows.Forms.Button btnKaydet;
-        private System.Windows.Forms.Button btnOgrGuncelle;
         private System.Windows.Forms.DataGridView dataGridStaj;
         private System.Windows.Forms.Button btnStajEkle;
         private System.Windows.Forms.TextBox txtBaslangicYili;
         private System.Windows.Forms.TextBox txtBitisYili;
+        private System.Windows.Forms.ComboBox cmbBolum;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

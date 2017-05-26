@@ -30,6 +30,7 @@ namespace MezunBilgiSistemi.BusinessLayer
 
         public static void MezunlariHeapeveAgacaEkle(List<Mezun> mezunListesi)
         {
+            //JSON nesnemizde sadece yazılım var
             foreach (var mezun in mezunListesi)
             {
                 heapYZM.Insert(mezun);
