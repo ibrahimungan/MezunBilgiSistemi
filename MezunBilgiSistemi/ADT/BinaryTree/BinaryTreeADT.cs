@@ -9,7 +9,7 @@ namespace MezunBilgiSistemi.ADT.BinaryTree
 {
     public class BinarTreeAdt
     {
-        private BinaryTreeNode kok;
+        public BinaryTreeNode kok;
         public string dugumler;
         public List<Mezun> liste = new List<Mezun>();
         public BinarTreeAdt()
@@ -134,7 +134,7 @@ namespace MezunBilgiSistemi.ADT.BinaryTree
         private void Ziyaret(BinaryTreeNode dugum)
         {
             liste.Add(dugum.mezun);
-            dugumler += "Ad: " + dugum.mezun.Ad + " Bölüm: " + dugum.mezun.BolumBilgileri.Last.Value.BolumAdi + "\n";
+            dugumler += "Ad: " + dugum.mezun.Ad + " Bölüm: " + dugum.mezun.BolumBilgileri.Last.Value.BolumAdi + " " + Environment.NewLine;
         }
         public void PostOrder()
         {
@@ -164,6 +164,21 @@ namespace MezunBilgiSistemi.ADT.BinaryTree
             List<Mezun> me = list.ToList<Mezun>();
 
             return me;
+        }
+
+        public int Derinlik(BinaryTreeNode node)
+        {
+            if (node == null)
+                return 0;
+            else
+            {
+                int lDepth = Derinlik(node.sol);
+                int rDepth = Derinlik(node.sag);
+
+                if (lDepth > rDepth)
+                    return (lDepth + 1);
+                else return (rDepth + 1);
+            }
         }
 
     }

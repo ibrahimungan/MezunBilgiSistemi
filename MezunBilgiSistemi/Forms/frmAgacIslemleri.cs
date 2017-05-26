@@ -19,22 +19,8 @@ namespace MezunBilgiSistemi.Forms
 
         public frmAgacIslemleri(string str)
         {
-            if (str == "Ağacın Derinliği")
-            {
-                txtAgac.Text = "";
-            }
-            else if (str == "InOrder")
-            {
-                txtAgac.Text = "";
-            }
-            else if (str == "PreOrder")
-            {
-                txtAgac.Text = "";
-            }
-            else if (str == "PostOrder")
-            {
-                txtAgac.Text = "";
-            }
+            InitializeComponent();
+            txtAgac.Text = str;
         }
         private void btnIptal_Click(object sender, EventArgs e)
         {

@@ -41,9 +41,10 @@
             // btnMezunGiris
             // 
             this.btnMezunGiris.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMezunGiris.Location = new System.Drawing.Point(60, 94);
+            this.btnMezunGiris.Location = new System.Drawing.Point(45, 76);
+            this.btnMezunGiris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMezunGiris.Name = "btnMezunGiris";
-            this.btnMezunGiris.Size = new System.Drawing.Size(260, 41);
+            this.btnMezunGiris.Size = new System.Drawing.Size(195, 33);
             this.btnMezunGiris.TabIndex = 0;
             this.btnMezunGiris.Text = "İş Arayan Bir Öğrenciyim";
             this.btnMezunGiris.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@
             // 
             // btnSirketGiris
             // 
-            this.btnSirketGiris.Location = new System.Drawing.Point(407, 94);
+            this.btnSirketGiris.Location = new System.Drawing.Point(305, 76);
+            this.btnSirketGiris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSirketGiris.Name = "btnSirketGiris";
-            this.btnSirketGiris.Size = new System.Drawing.Size(260, 41);
+            this.btnSirketGiris.Size = new System.Drawing.Size(195, 33);
             this.btnSirketGiris.TabIndex = 1;
             this.btnSirketGiris.Text = "Eleman Arayan Bir Şirketim";
             this.btnSirketGiris.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@
             // btnAgacDerinligi
             // 
             this.btnAgacDerinligi.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAgacDerinligi.Location = new System.Drawing.Point(6, 21);
+            this.btnAgacDerinligi.Location = new System.Drawing.Point(4, 17);
+            this.btnAgacDerinligi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgacDerinligi.Name = "btnAgacDerinligi";
-            this.btnAgacDerinligi.Size = new System.Drawing.Size(237, 41);
+            this.btnAgacDerinligi.Size = new System.Drawing.Size(178, 33);
             this.btnAgacDerinligi.TabIndex = 2;
             this.btnAgacDerinligi.Text = "Ağacın Derinliği";
             this.btnAgacDerinligi.UseVisualStyleBackColor = true;
@@ -73,32 +76,38 @@
             // btnInOrder
             // 
             this.btnInOrder.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnInOrder.Location = new System.Drawing.Point(353, 21);
+            this.btnInOrder.Location = new System.Drawing.Point(265, 17);
+            this.btnInOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInOrder.Name = "btnInOrder";
-            this.btnInOrder.Size = new System.Drawing.Size(237, 41);
+            this.btnInOrder.Size = new System.Drawing.Size(178, 33);
             this.btnInOrder.TabIndex = 3;
             this.btnInOrder.Text = "InOrder";
             this.btnInOrder.UseVisualStyleBackColor = true;
+            this.btnInOrder.Click += new System.EventHandler(this.btnInOrder_Click);
             // 
             // btnPreOrder
             // 
             this.btnPreOrder.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnPreOrder.Location = new System.Drawing.Point(6, 86);
+            this.btnPreOrder.Location = new System.Drawing.Point(4, 70);
+            this.btnPreOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPreOrder.Name = "btnPreOrder";
-            this.btnPreOrder.Size = new System.Drawing.Size(237, 41);
+            this.btnPreOrder.Size = new System.Drawing.Size(178, 33);
             this.btnPreOrder.TabIndex = 4;
             this.btnPreOrder.Text = "PreOrder";
             this.btnPreOrder.UseVisualStyleBackColor = true;
+            this.btnPreOrder.Click += new System.EventHandler(this.btnPreOrder_Click);
             // 
             // btnPostOrder
             // 
             this.btnPostOrder.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnPostOrder.Location = new System.Drawing.Point(353, 86);
+            this.btnPostOrder.Location = new System.Drawing.Point(265, 70);
+            this.btnPostOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPostOrder.Name = "btnPostOrder";
-            this.btnPostOrder.Size = new System.Drawing.Size(237, 41);
+            this.btnPostOrder.Size = new System.Drawing.Size(178, 33);
             this.btnPostOrder.TabIndex = 5;
             this.btnPostOrder.Text = "PostOrder";
             this.btnPostOrder.UseVisualStyleBackColor = true;
+            this.btnPostOrder.Click += new System.EventHandler(this.btnPostOrder_Click);
             // 
             // groupBox1
             // 
@@ -106,21 +115,24 @@
             this.groupBox1.Controls.Add(this.btnPostOrder);
             this.groupBox1.Controls.Add(this.btnInOrder);
             this.groupBox1.Controls.Add(this.btnPreOrder);
-            this.groupBox1.Location = new System.Drawing.Point(60, 178);
+            this.groupBox1.Location = new System.Drawing.Point(45, 145);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(607, 153);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(455, 124);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ağaç İşlemleri";
             // 
             // frmGiris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 370);
+            this.ClientSize = new System.Drawing.Size(560, 301);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSirketGiris);
             this.Controls.Add(this.btnMezunGiris);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmGiris";
             this.Text = "Giriş";
             this.Load += new System.EventHandler(this.frmGiris_Load);
