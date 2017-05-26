@@ -39,7 +39,7 @@ namespace MezunBilgiSistemi.ADT.BinaryTree
                     insertRoot(mezun, ref LastNode.sol);
                 else
                     return;
-            }   
+            }
         }
 
 
@@ -134,7 +134,7 @@ namespace MezunBilgiSistemi.ADT.BinaryTree
         private void Ziyaret(BinaryTreeNode dugum)
         {
             liste.Add(dugum.mezun);
-            dugumler += "Ad: "+dugum.mezun.Ad +" Bölüm: " + dugum.mezun.BolumBilgileri.Last.Value.BolumAdi + "\n";
+            dugumler += "Ad: " + dugum.mezun.Ad + " Bölüm: " + dugum.mezun.BolumBilgileri.Last.Value.BolumAdi + "\n";
         }
         public void PostOrder()
         {
@@ -152,7 +152,7 @@ namespace MezunBilgiSistemi.ADT.BinaryTree
         }
         public List<Mezun> Ortalama90UstuMezunlariGetir()
         {
-            var list = from mezun in liste where mezun.BolumBilgileri.Last.Value.NotOrtalamasi > 90 select mezun ;
+            var list = from mezun in liste where mezun.BolumBilgileri.Last.Value.NotOrtalamasi > 90 select mezun;
             List<Mezun> me = list.ToList<Mezun>();
 
             return me;

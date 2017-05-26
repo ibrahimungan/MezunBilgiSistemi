@@ -30,5 +30,12 @@ namespace MezunBilgiSistemi.Forms
             fl.Show();
             Hide();
         }
+
+        private void btnAgacDerinligi_Click(object sender, EventArgs e)
+        {
+            frmAgacIslemleri fa = new frmAgacIslemleri();
+            fa.Show();
+            Hide();
+        }
     }
 }
