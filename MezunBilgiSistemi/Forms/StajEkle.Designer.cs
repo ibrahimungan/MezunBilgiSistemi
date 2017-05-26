@@ -93,6 +93,7 @@
             this.btnStajEkle.TabIndex = 29;
             this.btnStajEkle.Text = "Ekle";
             this.btnStajEkle.UseVisualStyleBackColor = true;
+            this.btnStajEkle.Click += new System.EventHandler(this.btnStajEkle_Click);
             // 
             // frmStajEkle
             // 

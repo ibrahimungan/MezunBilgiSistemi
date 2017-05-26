@@ -26,6 +26,11 @@ namespace MezunBilgiSistemi.Forms
         {
 
         }
+
+        private void btnStajEkle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
    
