@@ -117,8 +117,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ADT\HashTable\" />
-    <Folder Include="Forms\" />
-    <Folder Include="BusinessLayer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mezunListesi.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
