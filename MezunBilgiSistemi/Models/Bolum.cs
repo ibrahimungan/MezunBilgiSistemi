@@ -9,8 +9,8 @@ namespace MezunBilgiSistemi.Models
     public class Bolum
     {
         public string BolumAdi { get; set; }
-        public DateTime BaslangicYili { get; set; }
-        public DateTime BitisYili{ get; set; }
+        public int BaslangicYili { get; set; }
+        public int BitisYili{ get; set; }
         public double NotOrtalamasi { get; set; }
         public bool BasariBelgesiAlmisMi { get; set; }
     }
