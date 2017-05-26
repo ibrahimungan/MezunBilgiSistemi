@@ -59,10 +59,10 @@
             this.txtNotOrt = new System.Windows.Forms.TextBox();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.btnOgrGuncelle = new System.Windows.Forms.Button();
-            this.dateBaslangic = new System.Windows.Forms.DateTimePicker();
-            this.dateBitis = new System.Windows.Forms.DateTimePicker();
             this.dataGridStaj = new System.Windows.Forms.DataGridView();
             this.btnStajEkle = new System.Windows.Forms.Button();
+            this.txtBaslangicYili = new System.Windows.Forms.TextBox();
+            this.txtBitisYili = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridStaj)).BeginInit();
             this.SuspendLayout();
             // 
@@ -231,23 +231,23 @@
             // 
             this.txtOgrNo.Location = new System.Drawing.Point(861, 80);
             this.txtOgrNo.Name = "txtOgrNo";
-            this.txtOgrNo.Size = new System.Drawing.Size(200, 22);
+            this.txtOgrNo.Size = new System.Drawing.Size(228, 22);
             this.txtOgrNo.TabIndex = 26;
             // 
             // btnOgrAra
             // 
             this.btnOgrAra.Location = new System.Drawing.Point(861, 119);
             this.btnOgrAra.Name = "btnOgrAra";
-            this.btnOgrAra.Size = new System.Drawing.Size(92, 36);
+            this.btnOgrAra.Size = new System.Drawing.Size(106, 36);
             this.btnOgrAra.TabIndex = 27;
             this.btnOgrAra.Text = "Öğrenci Ara";
             this.btnOgrAra.UseVisualStyleBackColor = true;
             // 
             // btnOgrKaldir
             // 
-            this.btnOgrKaldir.Location = new System.Drawing.Point(959, 119);
+            this.btnOgrKaldir.Location = new System.Drawing.Point(973, 119);
             this.btnOgrKaldir.Name = "btnOgrKaldir";
-            this.btnOgrKaldir.Size = new System.Drawing.Size(106, 36);
+            this.btnOgrKaldir.Size = new System.Drawing.Size(116, 36);
             this.btnOgrKaldir.TabIndex = 28;
             this.btnOgrKaldir.Text = "Öğrenci Kaldır";
             this.btnOgrKaldir.UseVisualStyleBackColor = true;
@@ -329,6 +329,7 @@
             this.btnKaydet.TabIndex = 39;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // btnOgrGuncelle
             // 
@@ -339,20 +340,6 @@
             this.btnOgrGuncelle.Text = "Öğrenci Güncelle";
             this.btnOgrGuncelle.UseVisualStyleBackColor = true;
             this.btnOgrGuncelle.Click += new System.EventHandler(this.btnOgrGuncelle_Click);
-            // 
-            // dateBaslangic
-            // 
-            this.dateBaslangic.Location = new System.Drawing.Point(861, 280);
-            this.dateBaslangic.Name = "dateBaslangic";
-            this.dateBaslangic.Size = new System.Drawing.Size(200, 22);
-            this.dateBaslangic.TabIndex = 41;
-            // 
-            // dateBitis
-            // 
-            this.dateBitis.Location = new System.Drawing.Point(861, 318);
-            this.dateBitis.Name = "dateBitis";
-            this.dateBitis.Size = new System.Drawing.Size(200, 22);
-            this.dateBitis.TabIndex = 42;
             // 
             // dataGridStaj
             // 
@@ -377,15 +364,29 @@
             this.btnStajEkle.UseVisualStyleBackColor = true;
             this.btnStajEkle.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // txtBaslangicYili
+            // 
+            this.txtBaslangicYili.Location = new System.Drawing.Point(861, 280);
+            this.txtBaslangicYili.Name = "txtBaslangicYili";
+            this.txtBaslangicYili.Size = new System.Drawing.Size(200, 22);
+            this.txtBaslangicYili.TabIndex = 45;
+            // 
+            // txtBitisYili
+            // 
+            this.txtBitisYili.Location = new System.Drawing.Point(861, 320);
+            this.txtBitisYili.Name = "txtBitisYili";
+            this.txtBitisYili.Size = new System.Drawing.Size(200, 22);
+            this.txtBitisYili.TabIndex = 46;
+            // 
             // frmKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1288, 665);
+            this.Controls.Add(this.txtBitisYili);
+            this.Controls.Add(this.txtBaslangicYili);
             this.Controls.Add(this.btnStajEkle);
             this.Controls.Add(this.dataGridStaj);
-            this.Controls.Add(this.dateBitis);
-            this.Controls.Add(this.dateBaslangic);
             this.Controls.Add(this.btnOgrGuncelle);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.txtNotOrt);
@@ -460,9 +461,9 @@
         private System.Windows.Forms.TextBox txtNotOrt;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.Button btnOgrGuncelle;
-        private System.Windows.Forms.DateTimePicker dateBaslangic;
-        private System.Windows.Forms.DateTimePicker dateBitis;
         private System.Windows.Forms.DataGridView dataGridStaj;
         private System.Windows.Forms.Button btnStajEkle;
+        private System.Windows.Forms.TextBox txtBaslangicYili;
+        private System.Windows.Forms.TextBox txtBitisYili;
     }
 }

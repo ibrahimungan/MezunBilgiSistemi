@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MezunBilgiSistemi.Models;
 
 namespace MezunBilgiSistemi.Forms
 {
@@ -43,6 +44,26 @@ namespace MezunBilgiSistemi.Forms
             frmOgrenciGuncelle og = new frmOgrenciGuncelle();
             og.Show();
             Hide();
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            Mezun m = new Mezun();
+            m.Ad = txtAd.Text;
+            m.Adres = txtAdres.Text;
+            m.BolumBilgileri.Last.Value.BaslangicYili = Convert.ToInt32(txtBaslangicYili.Text);
+            m.BolumBilgileri.Last.Value.BitisYili = Convert.ToInt32(txtBitisYili.Text);
+            m.BolumBilgileri.Last.Value.BolumAdi= txtBolumAd.Text;
+            m.BolumBilgileri.Last.Value.NotOrtalamasi = Convert.ToInt32(txtNotOrt.Text);
+            m.BolumBilgileri.Last.Value.BasariBelgesiAlmisMi = chbBasari.Checked;
+            m.DogumTarihi = dateDogumTarihi.Value.Date;
+            m.ePosta = txtEposta.Text;
+            //m.IlgiAlanları = 
+            m.OgrenciNo = Convert.ToInt64(txtOgrNo.Text);
+            //m.StajBilgileri.Last.Value.SirketAdi 
+            m.Telefon = txtTel.Text;
+            m.Uyruk = txtUyruk.Text;
+            //m.YabanciDil = cboxDil.Text;
         }
     }
 }

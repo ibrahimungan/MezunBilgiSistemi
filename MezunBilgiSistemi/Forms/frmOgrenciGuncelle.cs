@@ -21,5 +21,10 @@ namespace MezunBilgiSistemi.Forms
         {
             Application.OpenForms[Application.OpenForms.Count - 1].Show();
         }
+
+        private void btnOgrAra_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

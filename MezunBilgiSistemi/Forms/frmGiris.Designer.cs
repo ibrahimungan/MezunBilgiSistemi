@@ -123,6 +123,7 @@
             this.Controls.Add(this.btnMezunGiris);
             this.Name = "frmGiris";
             this.Text = "Giriş";
+            this.Load += new System.EventHandler(this.frmGiris_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

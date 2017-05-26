@@ -41,6 +41,7 @@
             this.btnOgrAra.TabIndex = 31;
             this.btnOgrAra.Text = "Öğrenci Ara";
             this.btnOgrAra.UseVisualStyleBackColor = true;
+            this.btnOgrAra.Click += new System.EventHandler(this.btnOgrAra_Click);
             // 
             // txtOgrNo
             // 

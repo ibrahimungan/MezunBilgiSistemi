@@ -37,5 +37,10 @@ namespace MezunBilgiSistemi.Forms
             fa.Show();
             Hide();
         }
+
+        private void frmGiris_Load(object sender, EventArgs e)
+        {
+            BusinessLayer.BL.olustur();
+        }
     }
 }
