@@ -14,6 +14,7 @@ namespace MezunBilgiSistemi.ADT.Heap
 
         public HeapNode(Mezun mezun)
         {
+            this.Mezun = mezun;
             foreach (var bolum in this.Mezun.BolumBilgileri)
             {
                 this.BasariDerecesi = bolum.NotOrtalamasi;
@@ -22,7 +23,7 @@ namespace MezunBilgiSistemi.ADT.Heap
                     BasariDerecesi += 10;
                 }
             }
-            this.Mezun = mezun;
+            
         }
     }
 }
