@@ -73,6 +73,12 @@
     <Compile Include="Forms\frmKayit.Designer.cs">
       <DependentUpon>frmKayit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmOgrenciGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOgrenciGuncelle.Designer.cs">
+      <DependentUpon>frmOgrenciGuncelle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmOgrenciList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmKayit.resx">
       <DependentUpon>frmKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOgrenciGuncelle.resx">
+      <DependentUpon>frmOgrenciGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmOgrenciList.resx">
       <DependentUpon>frmOgrenciList.cs</DependentUpon>
@@ -127,7 +136,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Folder Include="ADT\HashTable\" />
     <Content Include="mezunListesi.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
